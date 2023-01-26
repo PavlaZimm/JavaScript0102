@@ -16,11 +16,14 @@ function secti(a, b) {
 /**
  * Upozorní uživatele při spuštění.
  */
+
+
 function upozorni() {
+  console.log("Gratulace, právě jsi spustila tuto funkci!");
   alert("Gratulace, právě jsi spustila tuto funkci!");
+  let ctverecek = document.querySelector(".ctverecek");
+  ctverecek.innerHTML = "muj čtvereček";
 }
-
-
 
 function zmenaBarvy(){
   let ctverecek = document.querySelector('.ctverecek');
@@ -29,8 +32,7 @@ function zmenaBarvy(){
 
 
 function zobrazVysledek(){
-    let vysledek = document.querySelector("#vysledek").innerHTML = secti(4, 5);
-    
+    let vysledek = document.querySelector("#vysledek").innerHTML = secti(4, 5);    
 }
 
 function secti(cislo1,cislo2){
