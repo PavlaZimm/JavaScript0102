@@ -1,5 +1,5 @@
 // tady je místo pro náš program
-
+/**
 document.querySelector("#vysledek").innerHTML = secti(4, 5);
 
 /**
@@ -28,8 +28,10 @@ function zmenaBarvy(){
 }
 
 
-
-
+function zobrazVysledek(){
+    let vysledek = document.querySelector("#vysledek").innerHTML = secti(4, 5);
+    
+}
 
 function secti(cislo1,cislo2){
   let soucet = cislo1+cislo2;
